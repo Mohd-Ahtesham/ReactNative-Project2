@@ -21,6 +21,7 @@ import {
   Heart,
   Heart2,
 } from './Assest/svgs';
+import LottieView from 'lottie-react-native';
 
 const DATA = [
   {
@@ -118,7 +119,15 @@ let Call = () => {
     <TouchableOpacity onPress={checkedBox}>
       <View style={styles.heart}>
         {isChecked && <Heart />}
-        {!isChecked && <Heart2 />}
+        {!isChecked && (
+          <LottieView
+          
+            source={require('./Assest/svgs/heart.json')}
+            autoPlay
+            loop={false}
+            style={styles.lotte}
+          />
+        )}
       </View>
     </TouchableOpacity>
   );
@@ -134,6 +143,7 @@ const Sneakers = () => {
           <View style={styles.irender}>
             <View style={{flexDirection: 'row'}}>
               <View style={styles.shoes}>{item.image}</View>
+
               <Call />
             </View>
             <Text style={styles.title}>{item.heading}</Text>
@@ -186,5 +196,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     paddingBottom: 15,
   },
+  lotte:{
+    position:"relative",top:-5,left:2,height:25,width:25
+  }
 });
 export default Sneakers;

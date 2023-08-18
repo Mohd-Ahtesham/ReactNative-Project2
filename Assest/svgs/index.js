@@ -13,8 +13,8 @@ import Nike8 from '../svgs/nike8.svg';
 import Nike9 from '../svgs/nike9.svg';
 import Nike10 from '../svgs/nike10.svg';
 import Heart from '../svgs/heart.svg';
-import Load from "../svgs/load.gif"
-import Heart2 from '../svgs/heart2.svg'
+import Load from '../svgs/load.gif';
+import Heart2 from '../svgs/heart2.svg';
 export {
   Hamburger,
   MagnifineGlass,

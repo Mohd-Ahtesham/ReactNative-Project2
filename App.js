@@ -5,6 +5,7 @@ import Colors from './Ui/color';
 import Title from './Title';
 import Sneakers from './Sneakers';
 
+
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
