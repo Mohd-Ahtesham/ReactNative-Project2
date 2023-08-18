@@ -121,7 +121,6 @@ let Call = () => {
         {isChecked && <Heart />}
         {!isChecked && (
           <LottieView
-          
             source={require('./Assest/svgs/heart.json')}
             autoPlay
             loop={false}
@@ -196,8 +195,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     paddingBottom: 15,
   },
-  lotte:{
-    position:"relative",top:-5,left:2,height:25,width:25
-  }
+  lotte: {
+    position: 'relative',
+    top: -5,
+    left: 2,
+    height: 25,
+    width: 25,
+  },
 });
 export default Sneakers;
